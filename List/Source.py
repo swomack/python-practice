@@ -1,13 +1,10 @@
 
 
-def cum_sum(li):
-    new_li = []
-    acc = 0
-    for element in li:
-        acc += element
-        new_li.append(acc)
+def chop(t):
+    del t[0]
+    del t[len(t) - 1]
 
-    return new_li
 
-new_li = cum_sum([1,2,3])
-print(new_li)
+t = [1,2,3,4]
+chop(t)
+print(t)
