@@ -1,0 +1,2 @@
+Hello world! This is sourov. This file is a demo file i have created to check if my "World Frequency" program works, or not. My program will
+read this text file (yay! i know how to read text files using python), and output a histogram (my inner statistican triggered).
