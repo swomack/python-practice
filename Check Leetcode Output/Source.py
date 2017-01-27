@@ -1,5 +1,23 @@
 
 
-print("First output length:" + str(len(["stow","stob","seer","seen","embow","neem","wene","wave","wadna","reest","reem","renew","rine","rive","riven","riva","inerm","irene","vine","viner","vire","avener","avine","bowl","sise","besa","besan","bend","benda","bena","daven","wots","myst","send","teil","sand","sane","sang","anda","anes","anesis","nane","nanes"])) + "\n")
+def check_list_output(list1, list2):
+    if len(list1) != len(list2):
+        return False
 
-print("Second output length:" + str(len(["anda","anes","anesis","avener","avine","bena","bend","benda","besa","besan","bowl","daven","embow","inerm","irene","myst","nane","nanes","neem","reem","reest","renew","rine","riva","rive","riven","sand","sane","sang","seen","seer","send","sise","stob","stow","teil","vine","viner","vire","wadna","wave","wene","wots"])) + "\n")
+    list1.sort()
+    list2.sort()
+
+    index = 0
+    while index < len(list1):
+        if list1[index] != list2[index]:
+            return False
+        
+        index += 1
+    
+    return True
+
+
+
+print(check_list_output(['bb', 'cc'], ['cc', 'bb']))
+
+    
